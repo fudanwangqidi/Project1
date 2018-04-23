@@ -1,0 +1,95 @@
+*{margin:0;}
+header{
+    position:absolute;
+    top:0;
+    left:100px;
+    color:white;
+
+}
+header p{
+    font-size: 15px;
+
+    font-family: "Brush Script MT";
+}
+header h1{
+    font-family: "Edwardian Script ITC";
+    font-size:70px;
+    margin:0px;
+}
+nav{
+    position:absolute;
+    top:0;
+    right:200px;
+    color:white;
+    font-size:20px;
+}
+section img{width:100%;}
+section div{
+    position:absolute;
+    top:400px;
+    left:150px;
+    text-align: center;
+}
+footer p{
+    text-align: center;
+    color:white;
+}
+footer{background-color: black;}
+section{
+    height:50%;
+    background-size: 100%100%;
+    color:white;
+    font-size:30px;
+}
+main{
+    text-align: center;
+}
+main button{width: 100px;height: 30px;background-color:lightskyblue;}
+section button{width:200px;height:50px;background-color: inherit; }
+a{color:white;}
+section a{font-size:30px;}
+nav a:hover{background-color: mediumblue;}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+main table td img{
+    border-radius: 100%;
+}
+form {position:absolute;
+top:200px;
+left:300px;
+background-color: white;
+width:70%;
+height: 70%;
+z-index:1;
+    border-style: outset;
+border:5px;
+border-color: white;
+}
+form fieldset{
+    height:80%;
+}
+.whole{
+    width:400px;
+}
+#logform,#regisform{
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    border:1px solid #CCC;
+    background-color:#F9F9F9;
+    padding:5px;
+}
+
+#person{
+    display:none;
+}

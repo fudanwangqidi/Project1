@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <link  type="text/css" href="3.css" rel="stylesheet">
+    <script src="3.js"></script>
+</head>
+<body>
+<header>
+
+    <table>
+        <tr><td id="maybe"><a href="#" onclick="login()" id="logbutton">登陆</a>或 <a href="#" onclick="register();"id="regisbutton">注册</a></td>
+            <td id="notlog"><img src="images/icon/user_female.png"><a href="#">未登录</a></td>
+            <td id="person"><img src="images/icon/user_female.png"><a href="five.html">wqd</a> </td>
+            <td><img src="images/icon/cart.png"><a href="four.html"> 购物车</a> </td>
+            <td> <img src="images/icon/sign_out.png"><a href="#" onclick="out()">登出</a> </td>
+        </tr>
+    </table>
+</header>
+<nav>
+    <h1>ArtStore</h1>
+    <div id="seek">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" placeholder="搜索" >
+                </td>
+                <td>
+                    <button type="button"><a href="two.html"><img src="images/icon/find.png"></a> </button>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <div id="navigate">
+        <table >
+            <tr> <td><a href="one.html">首页</a></td>
+                <td><a href="two.html">搜索</a></td>
+                <td><a href="three.html">详情</a></td></tr>
+
+        </table>
+    </div>
+    <p>您的足迹：主页->搜索页面->商品详情</p>
+</nav>
+<section>
+    <h2>Mona Lisa Smile</h2>
+    <p>By <a href="two.html">Leonardo Da Vinci</a></p>
+            <div class="left"><img src="images/works/medium/097050.jpg"></div>
+    <div class="left" > <p>The Mona Lisa smile with mystery of life has been a mystery<br>
+        for centuries, Britain, but The Times reported on March 14, a<br> German art
+        historian recently...</p>
+        price:<strong>100000000</strong><br>
+        <button><img src="images/icon/rating.png"><a href="#">添加到心愿单</a> </button>&nbsp;&nbsp;<button onclick="ok()"><img src="images/icon/cart.png"> <a href="four.html">添加到购物车</a> </button>
+        <table id="intro">
+            <tr> <th>Product Details</th></tr>
+            <tr>
+            <td>Date</td>
+            <td>1922</td>
+        </tr>
+            <tr>
+                <td>Medium</td>
+                <td>Oil on cavas</td>
+            </tr>
+            <tr>
+                <td>Dimensions:</td>
+                <td>100cm*80cm</td>
+            </tr>
+            <tr>
+                <td>Home</td>
+                <td>Baltimore Art Museum</td>
+            </tr>
+            <tr>
+                <td>Genres</td>
+                <td>Neoclassical</td>
+            </tr>
+            <tr>
+                <td>Subjects</td>
+                <td>People Family</td>
+            </tr>
+            <tr>
+                <td>Heat</td>
+                <td>13</td>
+            </tr>
+        </table>
+    </div>
+<div class="right">
+    <table>
+        <tr>
+            <th> 流行艺术家</th>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th> 流行流派</th>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+        <tr>
+            <td>cbjlebcejc</td>
+        </tr>
+    </table>
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+<form  method="post"id="logform">
+    <fieldset>
+        <legend>用户登录</legend>
+        <table>
+            <tr>
+                <td>用户名</td>
+                <td><input class="whole"name="logname"type="text"placeholder="请输入用户名"></td>
+
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input class="whole"name="logpassword"type="password" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td>请输入验证码</td>
+                <td><input  id="ver"type="text"></td>
+                <td> <p id="verification"></p></td><!--在js里面更改为随机的-->
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td><button type="button"id="cancel"onclick="hidde('logform')">取消</button></td>
+                <td><button type="button"id="login"onclick="logturnoff(logname,logpassword,ver)">登录</button> </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+<form  method="post"id="regisform">
+    <fieldset>
+        <legend>用户注册</legend>
+        <table>
+            <tr>
+                <td>用户名</td>
+                <td><input class="whole" name="regisname"type="text"placeholder="请输入您的用户名"></td>
+
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input class="whole"type="password"name="regisfirstpassword" placeholder="请输入密码"></td>
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td>再次输入密码：</td>
+                <td><input class="whole" type="password"name="regissecondpassword" placeholder="请再次输入密码"onchange="validate_password(regisfirstpassword,regissecondpassword,'请保证两次输入密码相同！')"></td>
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td>请输入你的邮箱：</td>
+                <td><input type="text" class="whole" name="email"placeholder="请输入你的邮箱"onchange=" validate_email(email,'邮箱输入不正确！')" > </td>
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td><br> </td>
+            </tr>
+            <tr>
+                <td><button type="button"id="cancel2" onclick="hidde('regisform')">取消</button></td>
+                <td><button type="button"id="regis"onclick="registurnoff(regisname,regisfirstpassword,regissecondpassword,email)">注册</button> </td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
